@@ -95,7 +95,7 @@ Qui correspond bien au mot code sans erreur.
 ## Release History
 
 * 0.0.1
-    * Work in progress
+    
 
 ## Meta
 Auteurs : [Carl Hatoum](https://https://github.com/CarlHatoum), [Alexandros Sidiras Galante](https://github.com/Ratatinator97), Maxime Michel, Quentin Tixeront.
