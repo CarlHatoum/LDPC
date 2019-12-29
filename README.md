@@ -13,7 +13,7 @@ Une fois transmis, une erreur est introduite, c1 passe de 0 à 1. Nous recevons 
 Dans un premier temps, déclarer les variables suivantes dans le SHELL MATLAB:
 
 - c,  un vecteur colonne de taille N contenant des valeurs binaires du mot code à décoder.
-```
+```matlab
 >> c = [1; 1; 0; 1; 0; 1; 0; 1]
 
 c =
@@ -28,7 +28,7 @@ c =
      1
 ```    
 - H,  une  matrice  de  taille  [M,N],  qui est  la  matrice  de  parité. Elle  est constituée de 0 et 1 logiques, ou de true et false.
-```
+```matlab
 >> H = [false true false true true false false true; true true true false false true false false; false false true false false true true true; true false false true true false true false]
 
 H =
@@ -40,7 +40,7 @@ H =
      1     0     0     1     1     0     1     0
 ```
 - *Pour la fonction SOFT_DECODER,* une variable supplémentaire p, un vecteur colonne, de même dimension que c.  Les valeurs pi sont les probabilités que le bit ci soit un "1".
-```
+```matlab
 >> p = [0.9; 0.2; 0.1; 0.8; 0.2; 0.8; 0.1; 0.9]
 
 p =
@@ -56,7 +56,7 @@ p =
 ```
 
 - MAX_ITER, le nombre maximal d'itérations que l'algorithme pourra exécuter.
-```
+```matlab
 >> MAX_ITER = 100
 
 MAX_ITER =
@@ -64,7 +64,7 @@ MAX_ITER =
    100
 ```
 Lancer  ensuite  la  fonction  MATLAB HARD_DECODER_GROUPE3 ou SOFT_DECODER_GROUPE3 avec  les paramètres dans l'ordre suivant :
-```
+```matlab
 >> HARD_DECODER_GROUPE3(c, H, MAX_ITER)
 ```
 ou
@@ -77,7 +77,7 @@ Deux cas se distinguent:
 - Dans le cas contraire, l'algorithme va retourner un message informant que  la  limite  d'itérations  a  été  atteinte. Le  mot  code  retourné  par  la fonction s'affichera aussi mais n'est bon dans aucun des cas.
 
 Dans notre cas, nous obtenons :
-```
+```matlab
 Parity check completed successfully after 2 iterations.
 
 ans =
