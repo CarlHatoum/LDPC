@@ -68,7 +68,7 @@ Lancer  ensuite  la  fonction  MATLAB HARD_DECODER_GROUPE3 ou SOFT_DECODER_GROUP
 >> HARD_DECODER_GROUPE3(c, H, MAX_ITER)
 ```
 ou
-```
+```matlab
 >> SOFT_DECODER_GROUPE3(c, H, p, MAX_ITER)
 ```
 
